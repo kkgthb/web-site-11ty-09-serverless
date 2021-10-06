@@ -29,5 +29,5 @@
 /dist/**
 
 # Ignore most of the Netlify Function stuff that 11ty serverless's plugin builds
-#netlify/functions/firstrequestrender/*
-#!netlify/functions/firstrequestrender/index.js
+netlify/functions/firstrequestrender/*
+!netlify/functions/firstrequestrender/index.js
