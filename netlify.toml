@@ -1,0 +1,19 @@
+[build]
+base = "./"
+command = "npm run build"
+publish = "dist"
+
+  [build.environment]
+  NODE_ENV = "production"
+
+[dev]
+base = "./"
+command = "npm run dev"
+publish = "dist"
+
+[[redirects]]
+from = "/slessposter/"
+to = "/.netlify/functions/firstrequestrender"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "firstrequestrender"
