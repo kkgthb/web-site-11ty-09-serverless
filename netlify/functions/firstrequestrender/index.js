@@ -8,7 +8,7 @@ async function handler(event) {
   let elev = new EleventyServerless("firstrequestrender", {
     path: event.path,
     query: event.queryStringParameters,
-    functionsDir: "./functions/",
+    functionsDir: "./netlify/functions/",
   });
 
   try {
