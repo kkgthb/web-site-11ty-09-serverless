@@ -17,8 +17,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/static/");
 
   // "Now" timestamp
-  eleventyConfig.addShortcode("nowstamp", function () {
-    return String(Date.now());
+  eleventyConfig.addShortcode("nowstampstring", function () {
+    return new Date(Date.now()).toISOString();
   });
 
   // JSONify filter
