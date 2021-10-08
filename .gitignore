@@ -31,3 +31,5 @@
 # Ignore most of the Netlify Function stuff that 11ty serverless's plugin builds (regenerate it with "npm run build" if you delete it)
 netlify/functions/firstrequestrender/*
 !netlify/functions/firstrequestrender/index.js
+netlify/functions/alwaysrerender/*
+!netlify/functions/alwaysrerender/index.js

@@ -37,6 +37,12 @@ module.exports = (eleventyConfig) => {
     functionsDir: "./netlify/functions/",
   });
 
+  // Render "firstrequestrender" on first request
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "alwaysrerender",
+    functionsDir: "./netlify/functions/",
+  });
+
   // Clarify which folder is for input and which folder is for output
   return {
     dir: {
