@@ -5,10 +5,8 @@ permalink:
 tags: ["pages"]
 ---
 
-<h1 class="pb-4 text-3xl font-bold leading-none tracking-tight text-gray-900">I am a poster</h1>
+<h1 class="pb-4 text-3xl font-bold leading-none tracking-tight text-gray-900">I am a dynamic page; my HTML is rebuilt every time you reload <i>(last rebuild:  {% nowstampstring %})</i>.</h1>
 
-<p>{{ eleventy | jsonify }}</p>
-
-<p>I was rendered at {% nowstampstring %}</p>
+<p>I was rendered at  -- this should change every time you load the page.</p>
 
 <p>OH NO!  The sitemap only includes this page!  There's no way home!</p>
